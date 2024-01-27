@@ -52,6 +52,15 @@ button {
     border-radius: 4px;
     border-color: var(--primary-color);
 }
+.button {
+   background-color: var(--primary-color) ;
+    color: white;
+    padding: 16px 26px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: var(--primary-color);
+ 
+}
 .learn-button {
 border: 1px solid var(--primary-color);
 border-radius: 4px;
@@ -61,6 +70,19 @@ line-height: 26px;
 padding: 16px 30px;
 }
 
+.about-developer {
+    padding: 160px 20px;
+}
+.about-developer h1 {
+    font-size: 65px;
+    line-height: 80px;
+}
+.about-developer h2 {
+    font-size: 18px ;font-family: var(--headind-font-family);
+}
+.about-info {
+    margin: 30px;
+}
 @media (max-width: 900px) {
     h1 {
         font-size: 45px;
@@ -71,5 +93,9 @@ padding: 16px 30px;
     }
     .homepage {
         padding: 80px 20px;
+    }
+    .about-developer {
+        text-align: center;
+        padding: 0;
     }
 }
