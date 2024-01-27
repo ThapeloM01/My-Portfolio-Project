@@ -70,17 +70,26 @@ line-height: 26px;
 padding: 16px 30px;
 }
 
-.about-developer {
+.context-developer {
     padding: 160px 20px;
 }
-.about-developer h1 {
+.context-developer h1 {
     font-size: 65px;
     line-height: 80px;
 }
-.about-developer h2 {
+.context-developer h2 {
     font-size: 18px ;font-family: var(--headind-font-family);
 }
-.about-info {
+.context h3 {
+    line-height: 1.5;
+    margin: 20px 0;
+    font-size: 24px;
+    font-family: var(--headind-font-family);
+}
+.context p {
+    font-size: 14px;
+}
+.context {
     margin: 30px;
 }
 @media (max-width: 900px) {
@@ -94,7 +103,7 @@ padding: 16px 30px;
     .homepage {
         padding: 80px 20px;
     }
-    .about-developer {
+    .context-developer {
         text-align: center;
         padding: 0;
     }
