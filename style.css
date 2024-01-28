@@ -11,19 +11,26 @@ body{
 .homepage {
  background-color: var(--homepage-bg);
  text-align: center;
- padding: 120px 98px;
+ padding: 80px 20px;
+}
+h1, h2, h3, h4 {
+    font-family: var(--headind-font-family);
+    font-weight: bold;
+    color: black;
 }
 h1 {
-font-family: var(--headind-font-family);
 font-size: 95px;
-font-weight: bold;
 line-height: 1.5;
 
 }
 h2{
-    font-family: var(--headind-font-family);
      font-size: 64px;
-     font-weight: bold;
+}
+h3 {
+    font-size: 48px;
+}
+.description {
+    padding: 120px 60px;
 }
 
 p {
@@ -44,22 +51,32 @@ font-family: var(--paragraph-font-family)
     font-family: var(--headind-font-family);
     font-size: 24px;
 }
-button {
-    background-color: var(--primary-color) ;
-    color: white;
-    padding: 16px 26px;
-    font-size: 20px;
-    border-radius: 4px;
-    border-color: var(--primary-color);
-}
 .button {
    background-color: var(--primary-color) ;
     color: white;
-    padding: 16px 26px;
-    font-size: 20px;
+    padding: 16px 30px;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 4px;
     border-color: var(--primary-color);
- 
+    line-height: 27px;
+}
+.button:hover {
+    color:var(--primary-color) ;
+    background-color: white;
+}
+.btn-button {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+.btn-button:hover {
+    color: white;
+    background-color: var(--primary-color);
 }
 .learn-button {
 border: 1px solid var(--primary-color);
@@ -71,20 +88,21 @@ padding: 16px 30px;
 }
 
 .context-developer {
-    padding: 160px 20px;
+    padding: 60px 20px;
 }
 .context-developer h1 {
     font-size: 65px;
     line-height: 80px;
 }
 .context-developer h2 {
-    font-size: 18px ;font-family: var(--headind-font-family);
+    font-size: 18px ;
+    font-family: var(--paragraph-font-family);
 }
 .context h3 {
     line-height: 1.5;
     margin: 20px 0;
     font-size: 24px;
-    font-family: var(--headind-font-family);
+    font-family: var(--paragraph-font-family);
 }
 .context p {
     font-size: 14px;
@@ -116,22 +134,63 @@ nav a:hover, nav li.active-page a {
 .sheCodes-logo {
     max-height: 40px;
 }
+footer .email {
+text-decoration: none;
+color: black;
+font-size: 24px;
+}
+footer .contact-details {
+    background-color: #F9F7FE;
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+footer .contact-details p {
+    margin: 0;
+}
+footer {
+    margin: 60px 0;
+}
+footer .email:hover {
+    color:var(--primary-color) ;
+}
+
+footer .email {
+    color: black; 
+    font-size: 25px;
+    text-decoration: none;
+}
+footer .socialM-links a {
+    margin: 0 20px;
+    color: var(--primary-color);
+    background-color:#F9F7FE;
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out ;
+}
+footer .socialM-links a:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
 @media (max-width: 900px) {
     h1 {
         font-size: 45px;
-        line-height: 2;
+        line-height: 1.5;
     }
     h2 {
         font-size: 42px;
     }
-    .homepage {
-        padding: 80px 20px;
+    h3 {
+        font-size: 25px;
     }
+
+    
     .context-developer {
         text-align: center;
         padding: 0;
     }
-    nav a {
-        font-size: 14px;
+    .description {
+        text-align: center;
+        padding: 0;
     }
 }
